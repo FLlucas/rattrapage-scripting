@@ -1,0 +1,24 @@
+ ||| Installation DNS ||| 
+
+
+
+
+
+#Configuration du serveur master et déclaration des zones
+cd /etc/bind/
+nano named.conf.default-zones
+
+_______________________________________________
+
+
+zone "reseau.fr" {
+               
+		 type master;
+                
+		file "/etc/bind/db.reseau.fr";
+  
+        
+};
+
+
+_______________________________________________
